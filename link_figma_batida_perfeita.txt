@@ -1,1 +1,11 @@
-https://www.figma.com/file/GWuRIEXAO6GKxG3iXlUMbU/Figma-basics?type=design&node-id=0-286&mode=design&t=o4A8mpX4NhWz3J54-0
+link do design app celular:
+https://www.figma.com/file/GWuRIEXAO6GKxG3iXlUMbU/Figma-basics?type=design&node-id=0%3A286&mode=design&t=ffkQg4Kly2zc2C40-1
+
+link com o protótipo para Iphone 14:
+https://www.figma.com/proto/GWuRIEXAO6GKxG3iXlUMbU/Figma-basics?type=design&node-id=625-2&t=Zx1OfKLAPAEiLEbM-1&scaling=scale-down&page-id=0%3A286&starting-point-node-id=639%3A219&mode=design
+
+link do design app computador:
+https://www.figma.com/file/8bu26wci5yDvglHT7Ho6gN/design-app-computador?type=design&node-id=0%3A1&mode=design&t=rMWx8FyHwLUVz0mG-1
+
+link com o protótipo para MacBook Air:
+https://www.figma.com/proto/8bu26wci5yDvglHT7Ho6gN/design-app-computador?type=design&node-id=1-2&t=D0GSgOrOOm7F0RKf-1&scaling=scale-down&page-id=0%3A1&mode=design
