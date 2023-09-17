@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcular Area do losango</title>
+    <script>
+        function calcularAreaLosango(diagonalMaior, diagonalMenor) {
+        var area = (diagonalMaior * diagonalMenor) / 2;
+        return area;
+}
+
+        alert("Este programa permite calcular a área de um losango. Para realizar esse cálculo, é necessário conhecer as medidas da diagonal maior e da diagonal menor do losango.");
+        var diagonalMaior = parseFloat(prompt("Informe o valor da diagonal maior do losango:"));
+        var diagonalMenor = parseFloat(prompt("Informe o valor da diagonal menor do losango:"));
+        var areaDoLosango = calcularAreaLosango(diagonalMaior, diagonalMenor);
+        alert("A área do losango é: " + areaDoLosango);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

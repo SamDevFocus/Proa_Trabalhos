@@ -1,0 +1,237 @@
+/* Base */
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #757575;
+}
+
+
+main { 
+    display: flex;
+    flex-direction: column;
+}
+
+/* Cabeçalho */
+
+.meu-cabecalho {
+    justify-content: center;
+    background-color: #ffffff;
+    color: azure;
+    display: flex;
+}
+
+.meu-cabecalho h1{
+    font-size: 50px;
+    margin-left: 40px;
+}
+
+/* Links Para Bases */
+
+.linkParaCarros {
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.linkHyper {
+    border-radius: 5px;
+    align-items: center;
+    height: 20px;
+    width: 50px;
+    background-color: #ffffff;
+}
+
+.linkHyper a{
+    color: white;
+    text-decoration: none;
+}
+
+.linkHome {
+    border-radius: 5px;
+    align-items: center;
+    height: 20px;
+    width: 50px;
+    background-color: #ffffff;
+}
+
+.linkHome a{
+    color: white;
+    text-decoration: none;
+}
+
+.linkTuning {
+    border-radius: 5px;
+    align-items: center;
+    height: 20px;
+    width: 50px;
+    background-color: #ffffff;
+}
+
+.linkTuning a{
+    color: white;
+    text-decoration: none;
+}
+
+.tipoDeCarro {
+    display: inline;
+    flex-direction: row-reverse;
+    align-items: flex-end;
+}
+
+/* Artigos dos Carros */
+
+article{
+    padding: 100px;
+    display: flex;
+    flex-direction: row;
+    border-top: 10px #3a3a3a solid;
+}
+
+article img{
+    border: 2px solid  rgb(59, 59, 59);
+    border-radius: 10px;
+}
+
+article h2{
+    justify-content: flex-end;
+}
+
+/* Texto Dos Article */
+
+.carro0101 {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+}
+
+div h1{
+    color: rgb(255, 255, 255);
+}
+
+div p{
+    color: rgb(255, 255, 255);
+}
+
+div h2{
+    color: rgb(255, 255, 255);
+}
+
+/* Base para Carros Separados */
+
+.background-BaseCar {
+    background: rgb(40,117,168);
+    background: linear-gradient(90deg, rgba(40,117,168,1) 0%, rgba(0,153,255,1) 50%, rgba(40,117,168,1) 100%);
+    height: 450px;
+    width: 1250px;
+}
+
+.cobertorBaseCar {
+    justify-content: center;
+}
+/* inicio do cabeçalho novo */
+.containerCabecalho {
+    display: flex;
+    flex-direction: row;
+}
+
+.titulo1pgcar {
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 1250px;
+    height: 60px;
+    background-color: #303030;
+}
+
+.containerCabecalho2 {
+    height: 50px;
+    width: auto;
+    background-color: #3a3a3a;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-content: center;
+    align-items: center;
+}
+
+a{ 
+    color: white;
+}
+
+
+.areaimgbase {
+    display: flex;
+    background-color: rgb(80, 80, 80);
+    height: 49px;
+    width: 401px;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    margin-bottom: 6px;
+    border-radius: 5px;
+}
+
+
+.imgCarroNotice {
+    height: 319px;
+    width: 533px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 35%;
+    top: 67%;
+}
+
+.imgCarroNotice img{
+    flex-direction: row;
+    border: 2px  rgb(59, 59, 59) solid;
+    border-radius: 10px;
+}
+
+.logomarca {
+    height: 150px;
+    width: 150px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 832px;
+    top: 227px;
+}
+
+
+.areatexto1 {
+    background-color: rgb(87, 87, 87);
+    opacity: 60%;
+    height: 230px;
+    width: 300px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 838px;
+    top: 376px;
+    border-radius: 15px;
+}
+
+.areatexto1 h1{
+    font-size: 15px;
+    margin: 10px;
+
+}
+
+.linhaCP {
+    background-color: #3b3b3b;
+    height: 20px;
+    width: 1161px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 582px;
+    top: 524px;
+}
+
+.videosobrecarro {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 590px;
+    top: 715px;
+}
