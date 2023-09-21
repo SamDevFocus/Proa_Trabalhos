@@ -32,12 +32,17 @@ Este repositório está em constante evolução. Continuarei adicionando novas a
 
 2. **HTML e CSS**: HTML e CSS são essenciais para criar a estrutura e o estilo dos nossos sites e interfaces de aplicativos.
 
-4. **Figma**: O Figma é uma ferramenta importante para o design de interfaces de usuário, e usamos para criar protótipos de nossos projetos.
+4. [**Figma**](https://www.figma.com/): O Figma é uma ferramenta importante para o design de interfaces de usuário, e usamos para criar protótipos de nossos projetos.
+
+5. [**Bootstrap**](https://getbootstrap.com/): Um framework de front-end que acelera o desenvolvimento de projetos web, fornecendo componentes pré-projetados
   <div style="display: inline_block"><br>
   <img align="center" alt="Sam-Js" src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=JavaScript&logoColor=white">
   <img align="center" alt="Sam-HTML" src="https://img.shields.io/badge/CSS-239120?&style=for-the-badge&logo=css3&logoColor=white">
   <img align="center" alt="Sam-CSS" src="https://img.shields.io/badge/HTML-239120?style=for-the-badge&logo=html5&logoColor=white">
   <img align="center" alt="Sam-CSS" src="https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white">
+  <img align="center" alt="Sam-CSS" src="https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white">
+
+   
   </div>
 
 ## Agradecimentos 🙏
