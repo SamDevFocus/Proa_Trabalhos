@@ -1,4 +1,4 @@
- ![Texto alternativo](https://github.com/SamDevFocus/Proa_Trabalhos/blob/master/img/Captura%20de%20tela%202023-09-16%20200136.png)
+ ![Texto alternativo](https://github.com/SamDevFocus/Proa_Trabalhos/blob/master/img/Captura%20de%20Tela%20(5).png)
 # Repositório do Curso no Instituto [Proa](https://www.instagram.com/instituto.proa/)
 
 Bem-vindo ao repositório dedicado ao curso no Instituto Proa, Atividades do [Professor Gabriel](https://github.com/gabaugusto). Este é o lugar onde você encontrará uma variedade de projetos e atividades realizados durante o curso.
