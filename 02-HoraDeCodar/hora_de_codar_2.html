@@ -203,9 +203,129 @@
                 alert("Números maiores que 72: " + numerosMaiores.join(", "));
         
         */
- 
+
+        /*
+                let numeros = [];
+                let soma = 0;
         
- </script>
+                for (let i = 0; i < 4; i++) {
+                    let numero = parseFloat(prompt(`Digite o ${i + 1}º número:`));
+        
+                    if (numero >= 0 && numero < 10) {
+                        numeros.push(numero);
+                        soma += numero;
+                    } else {
+                        alert("Número fora do intervalo de 0 a 10. Tente novamente.");
+                        i--;
+                    }
+                }
+        
+                if (numeros.length === 4) {
+                    let media = soma / 4;
+        
+                    if (media > 5) {
+                        alert("Você passou no teste.");
+                    } else {
+                        alert("Tente novamente.");
+                    }
+                } else {
+                    alert("Você não forneceu 4 números dentro do intervalo de 0 a 10.");
+                }
+        
+        */
+
+        /*
+                let anoNascimento = parseFloat(prompt("Informe seu ano de nascimento:"));
+                let mesNascimento = parseFloat(prompt("Informe o mês de nascimento (1 a 12):"));
+                let anoAtual = parseFloat(prompt("Informe o ano atual:"));
+                let mesAtual = parseFloat(prompt("Informe o mês atual (1 a 12):"));
+        
+                let idade = anoAtual - anoNascimento;
+        
+                if (mesAtual < mesNascimento) {
+                    idade--;
+                }
+                //Se o mês atual for menor que o mês de nascimento, isso significa que a pessoa ainda não fez aniversário no ano atual, então subtrai 1 da idade
+                if (idade === 16 || idade === 17) {
+                    alert("Você tem " + idade + " anos\n" + "Direito a voto SIM\nMaioridade Penal NÃO\nPossibilidade de CNH NÃO\n");
+                } else if (idade >= 18) {
+                    alert("Você tem " + idade + " anos\n" + "Direito a voto SIM\nMaioridade Penal SIM\nPossibilidade de CNH SIM\n");
+                } else {
+                    alert("Você tem " + idade + " anos\n" + "Direito a voto NÃO\nMaioridade Penal NÃO\nPossibilidade de CNH NÃO\n");
+                }
+        
+        */
+
+        /*
+                var altura = parseFloat(prompt("Digite sua altura em metros:"));
+                var sexo = parseInt(prompt("Digite o sexo (1 para feminino, 2 para masculino):"));
+                var pesoIdeal;
+        
+                if (sexo === 1) {
+        
+                    pesoIdeal = (62.1 * altura) - 44.7;
+                } else if (sexo === 2) {
+        
+                    pesoIdeal = (72 * altura) - 58;
+                } else {
+                    alert("Sexo inválido. Por favor, digite 1 para feminino ou 2 para masculino.");
+        
+                }
+        
+                if (pesoIdeal) {
+                    alert("Seu peso ideal é: " + pesoIdeal.toFixed(2) + " kg");
+                }
+        */
+
+/* 
+        var escolha = parseFloat(prompt("Escolha uma opção de 1 a 4\n1) Adição\n2) Subtração\n3) Divisão\n4) Multiplicação"));
+        switch (escolha) {
+
+            case 1:
+                adicao();
+                break;
+            case 2:
+                subtracacao();
+                break;
+            case 3:
+                divisao();
+                break;
+            case 4:
+                multiplicacao();
+                break;
+            default:
+                erro();
+        }
+
+        function adicao() {
+            var valor1 = parseFloat(prompt("Informe o primeiro valor:"));
+            var valor2 = parseFloat(prompt("Informe o segundo valor:"));
+            var soma = valor1 + valor2;
+            alert(`Resultado: ${soma}`);
+        }
+
+        function Subtracao() {
+            var valor1 = parseFloat(prompt("Informe o primeiro valor:"));
+            var valor2 = parseFloat(prompt("Informe o segundo valor:"));
+            var subtracao = valor1 - valor2;
+            alert(`Resultado: ${subtracao}`);
+        }
+
+        function divisao() {
+            var valor1 = parseFloat(prompt("Informe o primeiro valor:"));
+            var valor2 = parseFloat(prompt("Informe o segundo valor:"));
+            var divisao = valor1 / valor2;
+            alert(`Resultado: ${divisao}`);
+        }
+
+        function multiplicacao() {
+            var valor1 = parseFloat(prompt("Informe o primeiro valor:"));
+            var valor2 = parseFloat(prompt("Informe o segundo valor:"));
+            var multiplicacao = valor1 * valor2;
+            alert(`Resultado: ${multiplicacao}`);
+        }
+ */
+    </script>
 
 
 </body>
