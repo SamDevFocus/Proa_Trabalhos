@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        /*
+                while (true) {
+                    alert("Informe dois números para saber o maior deles");
+                    var valor1 = parseFloat(prompt("Informe o primeiro número:"));
+                    var valor2 = parseFloat(prompt("Informe o segundo número:"));
+        
+                    if (isNaN(valor1) || isNaN(valor2)) {
+                        alert("Por favor, insira números válidos.");
+                    } else {
+                        if (valor1 > valor2) {
+                            alert(`Maior número: ${valor1}`);
+                        } else if (valor2 > valor1) {
+                            alert(`Maior número: ${valor2}`);
+                        } else {
+                            alert(`Os dois números são iguais: ${valor1}`);
+                        }
+                    }
+        
+                    var continuar = prompt("Deseja continuar? (Sim/Não)").toLowerCase();
+                    if (continuar !== "sim") {
+                        break;
+                    }
+                }
+        */
+
+        /*
+                while (true) {
+                    alert("Informe um valor para saber se ele é positivo ou negativo")
+                    var valor1 = parseFloat(prompt("Informe o número:"));
+        
+                    if (valor1 > 0) {
+                        alert(`o Numero: ${valor1} é positivo`)
+                    } else if (valor1 < 0) {
+                        alert(`o Numero: ${valor1} é negativo`)
+                    }
+        
+                    var continuar = prompt("Deseja continuar? (Sim/Não)").toLowerCase();
+                    if (continuar !== "sim") {
+                        break;
+                    }
+                }
+        */
+
+        /*
+                while (true) {
+                    var valor1 = parseFloat(prompt("Informe o primeiro número:"));
+                    var valor2 = parseFloat(prompt("Informe o segundo número:"));
+                    var valor3 = parseFloat(prompt("Informe o terceiro número:"));
+        
+                    if (isNaN(valor1) || isNaN(valor2) || isNaN(valor3)) {
+                        alert("Por favor, insira números válidos.");
+                        continue;
+                    }
+        
+                    var maior;
+        
+                    if (valor1 >= valor2 && valor1 >= valor3) {
+                        maior = valor1;
+                    } else if (valor2 >= valor1 && valor2 >= valor3) {
+                        maior = valor2;
+                    } else {
+                        maior = valor3;
+                    }
+        
+                    alert(`O maior número é: ${maior}`);
+        
+                    var continuar = prompt("Deseja continuar? (Sim/Não)").toLowerCase();
+                    if (continuar !== "sim") {
+                        break;
+                    }
+                }
+        
+        */
+
+        /*
+                while (true) {
+                    var valor1 = parseFloat(prompt("Informe o primeiro número:"));
+                    var valor2 = parseFloat(prompt("Informe o segundo número:"));
+                    var valor3 = parseFloat(prompt("Informe o terceiro número:"));
+        
+                    if (isNaN(valor1) || isNaN(valor2) || isNaN(valor3)) {
+                        alert("Por favor, insira números válidos.");
+                        continue;
+                    }
+        
+                    var maior1;
+                    var maior2;
+        
+                    if (valor1 >= valor2 && valor1 >= valor3) {
+                        maior1 = valor1;
+                        if (valor2 >= valor3) {
+                            maior2 = valor2;
+                        } else {
+                            maior2 = valor3;
+                        }
+                    } else if (valor2 >= valor1 && valor2 >= valor3) {
+                        maior1 = valor2;
+                        if (valor1 >= valor3) {
+                            maior2 = valor1;
+                        } else {
+                            maior2 = valor3;
+                        }
+                    } else {
+                        maior1 = valor3;
+                        if (valor1 >= valor2) {
+                            maior2 = valor1;
+                        } else {
+                            maior2 = valor2;
+                        }
+                    }
+        
+                    var somaDoisMaiores = maior1 + maior2;
+        
+                    alert(`O resultado é: ${somaDoisMaiores}`);
+        
+                    var continuar = prompt("Deseja continuar? (Sim/Não)").toLowerCase();
+                    if (continuar !== "sim") {
+                        break;
+                    }
+                }
+        
+        */
+
+        /*
+                let soma = 0;
+        
+                for (let i = 1; i <= 6; i++) {
+                    let valor = parseFloat(prompt(`Informe o ${i}º valor:`));
+        
+        
+                    if (!isNaN(valor)) {
+                        soma += valor;
+        
+                    } else {
+                        alert(`Valor ${i} não é um número válido. Tente novamente.`);
+                        i--;
+                    }
+                }
+        
+        
+                let media = soma / 6;
+        
+                alert(`Média dos valores: ${media}`);
+        
+        */
+
+        /*
+                var valor1 = parseFloat(prompt("Informe o primeiro valor: "));
+                var valor2 = parseFloat(prompt("Informe o segundo valor: "));
+                var valor3 = parseFloat(prompt("Informe o terceiro valor: "));
+                var valor4 = parseFloat(prompt("Informe o quarto valor: "));
+        
+                var maiorValor
+        
+                if (valor1 > valor2 && valor1 > valor3 && valor1 > valor4) {
+                    maiorValor = valor1;
+                } else if (valor2 > valor1 && valor2 > valor3 && valor2 > valor4) {
+                    maiorValor = valor2;
+                } else if (valor3 > valor1 && valor3 > valor2 && valor3 > valor4) {
+                    maiorValor = valor3;
+                } else {
+                    maiorValor = valor4;
+                }
+        
+                alert(`o primeiro valor é ${valor1} o ultimo numero é ${valor4} o maior de todos eles é ${maiorValor}`);
+        
+        */
+
+        /*
+                const numerosMenores = [];
+                const numerosMaiores = [];
+                let somaMenores = 0;
+        
+                for (let i = 1; i <= 6; i++) {
+                    const numero = parseFloat(prompt(`Informe o ${i}º número:`));
+        
+                    if (numero < 72) {
+                        somaMenores += numero;
+                    } else {
+                        numerosMaiores.push(numero);
+                    }
+        
+                    numerosMenores.push(numero);
+                }
+        
+                alert(`Soma dos números menores que 72: ${somaMenores}`);
+        
+        
+                alert("Números informados: " + numerosMenores.join(", "));
+        
+                alert("Números maiores que 72: " + numerosMaiores.join(", "));
+        
+        */
+ 
+        
+ </script>
+
+
+</body>
+
+</html>
