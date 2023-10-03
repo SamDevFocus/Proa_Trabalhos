@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hora_de_codar_3</title>
+</head>
+
+<body>
+
+    <script>
+
+        /*
+                atividade1();
+                
+                function atividade1() {
+                  var valor1 = parseFloat(prompt("Informe o primeiro valor"));
+                  var valor2;
+                
+                  do {
+                    valor2 = parseFloat(prompt("Informe o segundo valor"));
+                    if (valor2 <= 0) {
+                      alert("Informe o segundo valor igual ou maior que 1");
+                    }
+                  } while (valor2 <= 0);
+                
+                  var divisao = valor1 / valor2;
+                  alert(`Resultado: ${divisao}`);
+                }10
+                
+        */
+        /*
+                function bombaRelogio() {
+                    var segundos = 30;
+                    var timer = setInterval(function() {
+                        document.write(segundos + '<br>');
+                        segundos--;
+        
+                        if (segundos < 0) {
+                            clearInterval(timer);
+                            document.write('EXPLOSÃO');
+                        }
+                    }, 1000);
+                }
+        
+                bombaRelogio();
+        
+        */
+
+        /*
+                function decrecente() {
+                    var segundos = 10;
+                    var timer = setInterval(function () {
+                        document.write(segundos + '<br>');
+                        segundos--;
+        
+                        if (segundos < 1) {
+                            clearInterval(timer);
+                            document.write('FIM !!!');
+                        }
+                    }, 1000);
+                }
+        
+                decrecente();
+        */
+
+        /*
+                 var soma = 0; 
+                 var contador = 0; 
+         
+                 for (var i = 15; i <= 100; i++) {
+                     soma += i; 
+                     contador++;
+                 }
+         
+                 var media = soma / contador; 
+    
+                 document.write("A média dos números de 15 a 100 é: " + media);
+        */
+
+        /*
+                var numero1 = parseInt(prompt("Digite o primeiro número inteiro:"));
+                var numero2 = parseInt(prompt("Digite o segundo número inteiro (deve ser maior que o primeiro):"));
+                var soma = 0;
+                var quantidadeNumeros = 0;
+        
+                if (numero1 >= numero2) {
+                    alert("O segundo número deve ser maior que o primeiro. Recarregue a página e tente novamente.");
+                } else {
+                    for (var i = numero1; i <= numero2; i++) {
+                        soma += i;
+                        quantidadeNumeros++;
+                    }
+        
+                    var mediaTotal = soma / quantidadeNumeros;
+                    alert(`A média aritmética dos números entre ${numero1}  e  ${numero2} é: ${mediaTotal.toFixed(2)}`);
+                }
+        
+        */
+
+        /*
+                var alunosAprovados = 0;
+        
+                while (true) {
+                    var nota1 = parseFloat(prompt("Insira a primeira nota do aluno:"));
+                    var nota2 = parseFloat(prompt("Insira a segunda nota do aluno:"));
+        
+                    var media = (nota1 + nota2) / 2;
+        
+                    if (media >= 9.5) {
+                        alert("Aprovado! Média: " + media);
+                        alunosAprovados++;
+                    } else {
+                        alert("Reprovado. Média: " + media);
+                    }
+        
+                    var continuar = prompt("Calcular a média de outro aluno? (Sim/Não)").toLowerCase();
+        
+                    if (continuar !== "sim") {
+                        break;
+                    }
+                }
+        
+                alert("Quantidade de alunos aprovados: " + alunosAprovados);
+        */
+
+        /*
+                var notas = []; 
+        
+                for (var i = 1; i <= 6; i++) {
+                    var nota;
+                    do {
+                        nota = parseFloat(prompt("Digite a nota " + i + " (0 a 10):"));
+                    } while (isNaN(nota) || nota < 0 || nota > 10); 
+        
+                    notas.push(nota);
+                }
+        
+                var soma = 0;
+        
+                for (var i = 0; i < notas.length; i++) {
+                    soma += notas[i]; 
+                }
+        
+                var media = soma / notas.length; 
+        
+                alert(`A média do aluno é: ${media}`);
+        */
+
+        /*
+                function valores_inteiros_entre() {
+                    var N = parseInt(prompt("Digite um número N:"));
+        
+                    if (N <= 0 || isNaN(N)) {
+                        document.write("Por favor, insira um número válido maior que zero.");
+                        return;
+                    }
+        
+                    var contador = 1;
+                    var timer = setInterval(function () {
+                        if (contador <= N) {
+                            document.write(contador + '<br>');
+                            contador++;
+                        } else {
+                            clearInterval(timer);
+                            document.write('FIM !!!');
+                        }
+                    }, 1000);
+                }
+        
+                valores_inteiros_entre();
+        */
+
+        /*
+                var N = parseInt(prompt("Digite um número N para calcular as tabuadas de 1 a N:"));
+        
+                if (N <= 0 || isNaN(N)) {
+                    alert("Por favor, insira um número válido maior que zero.");
+                } else {
+                    var resultado = "";
+        
+                    for (var i = 1; i <= N; i++) {
+                        resultado += "Tabuada do " + i + ":<br>";
+        
+                        for (var j = 1; j <= 10; j++) {
+                            resultado += i + " x " + j + " = " + (i * j) + "<br>";
+                        }
+        
+                        resultado += "<br>";
+                    }
+        
+                    document.write(resultado);
+        
+                }
+        
+         */
+
+        /* 
+                var valoresDentroIntervalo = 0;
+                var valoresForaIntervalo = 0;
+        
+                for (var i = 1; i <= 10; i++) {
+                    var valor = parseFloat(prompt("Digite o valor #" + i));
+        
+                    if (!isNaN(valor)) { 
+                        if (valor >= 24 && valor <= 42) {
+                            valoresDentroIntervalo++;
+                        } else {
+                            valoresForaIntervalo++;
+                        }
+                    } else {
+                        alert("Por favor, insira um número válido.");
+                        i--;
+                    }
+                }
+        
+                alert("Valores dentro do intervalo (24 a 42): " + valoresDentroIntervalo);
+                alert("Valores fora do intervalo (menos de 24 ou mais de 42): " + valoresForaIntervalo);
+        
+         */
+        
+    </script>
+
+</body>
+
+</html>
