@@ -28,8 +28,4 @@ Em um pequeno hospital local, uma emocionante jornada para o desenvolvimento de 
 ## Diagrama ER 📊
 
 Com base nos requisitos acima, o Diagrama ER para o projeto de banco de dados ficaria assim:
-
-[Inserir Diagrama ER aqui]
-
-Certifique-se de criar as entidades adequadas, bem como os relacionamentos entre elas, para atender aos requisitos do hospital e garantir um sistema de banco de dados eficiente e completo. Boa sorte com o projeto! 🚀🏥💻
-
+ ![Texto alternativo](https://github.com/SamDevFocus/Proa_Trabalhos/blob/master/O%20Hospital%20Fundamental/Novo%20mural.jpeg?raw=true)
