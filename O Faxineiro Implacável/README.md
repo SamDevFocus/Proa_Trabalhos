@@ -1,13 +1,52 @@
-# Figma-interface_music_application
-Repositorio: Interface de uma aplicação de  Musica em Figma.
+# O Faxineiro Implacável
 
-- BUNNY HOP -
-   - app com textos gerados por IA que apresentam a interface
-   - no pc opção para logar com QR code
-   - botão para ver a letra da musica
-   - botão about the music para inf sobre a musica com um texto gerado por IA
-   - desbloqueia img gerada por IA apos ler as inf com a interação
+Peço desculpas pelo equívoco anterior. Aqui está o README em Markdown:
 
-link Celular: https://www.figma.com/proto/gRNmgWADTULSOMeq5WRSHc/Untitled?type=design&node-id=22-2&t=FcjGXDwMXXaeizRw-0&scaling=scale-down&page-id=0%3A1&starting-point-node-id=22%3A2
+```markdown
+# O Faxineiro Implacável
 
-link PC: https://www.figma.com/proto/gRNmgWADTULSOMeq5WRSHc/Untitled?type=design&node-id=178-242&t=FuCJSSWmqIk4mHLj-0&scaling=scale-down&page-id=178%3A150&starting-point-node-id=178%3A242
+![Faxineiro](https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/160/google/298/custodian_1f9ae.png)
+
+**"Quando uma mancha indesejada aparece, não medimos esforços para removê-la, mesmo que isso signifique desafiar as leis dos dados."**
+
+Hoje é o dia de limpar as estantes, organizar livros e evoluir um pouco mais. Nesta atividade, meu objetivo é aprender a lidar com erros, ler (e reler) muito o próprio código e não deixar o desânimo bater. Abaixo, descrevo como realizei essa tarefa.
+
+## Aviso
+Antes de prosseguir, é importante lembrar que todos os scripts abaixo devem ser usados e testados no banco de dados apropriado para esta atividade. Utilizamos comandos como ALTER TABLE, DROP, IF EXISTS, IF NOT EXISTS e muito do que foi aprendido em aula.
+
+## Um Lugar para Nossos Livros
+A primeira etapa consistiu em criar um banco de dados chamado "Biblioteca". Parece simples, mas é um passo essencial para organizar nossa coleção de livros.
+
+```sql
+CREATE DATABASE Biblioteca;
+```
+
+## Tirando os Livros das Prateleiras
+A seguir, comecei a criar uma pequena biblioteca com livros. No entanto, o script de criação da tabela 'Livros' continha erros que impediam a renderização completa. Meu desafio foi encontrar e corrigir esses erros.
+
+```sql
+-- Coloque o script de criação da tabela 'Livros' corrigido aqui.
+```
+
+## Retirando o Pó
+Continuando com o código acima, realizei as seguintes ações:
+
+1. Adicionei a regra AUTO_INCREMENT para a chave primária e removi os dados referentes ao ID dos livros do script de inserção.
+
+2. Criei uma tabela para 'Autores' e outra para 'Editoras' para separar essas informações. Ambas continham chaves primárias para gerar relacionamentos.
+
+3. Utilizando ALTER TABLE, eliminei as colunas 'autor' e 'editora' da tabela 'Livros' e adicionei as colunas 'autor_id' e 'editora_id' como referências como chaves estrangeiras das respectivas tabelas.
+
+4. Retirei os valores dos autores e das editoras do script inicial e inseri-os nas novas tabelas.
+
+## Colocando Tudo no Lugar
+O script abaixo seria para adicionar novos livros à nossa biblioteca, mas com as mudanças feitas para normalização e higienização da base, foi necessário reestruturar a base para evitar problemas. Aqui está o resultado após as correções:
+
+```sql
+-- Coloque o script de adição de novos livros após a reestruturação da base.
+```
+
+Agora, nossa biblioteca está mais organizada e pronta para receber novos livros. Se tiver alguma dúvida ou sugestão, fique à vontade para compartilhar. :books:
+```
+
+Este é um documento Markdown que você pode copiar e colar em um arquivo README.md em seu repositório no GitHub. Certifique-se de adicionar a imagem do Faxineiro (ou a imagem que preferir) ao seu repositório e ajustar o link da imagem no README conforme necessário.
