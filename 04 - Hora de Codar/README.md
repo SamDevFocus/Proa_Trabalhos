@@ -10,24 +10,36 @@ Primeiro, criei uma lista vazia para armazenar os nomes dos estudantes. Depois, 
 
 Ao final, exibi a quantidade de estudantes cadastrados e a lista com seus nomes. Ficou algo assim:
 
-```python
-estudantes = []
+```js
+// Cria uma array vazia para armazenar os estudantes
+var estudantes = [];
 
-while True:
-    nome = input("Digite o nome do estudante (ou 'PARE' para encerrar): ")
-    if nome == "PARE":
-        break
-    estudantes.append(nome)
+// Cria uma variável para controlar o loop
+var continuar = true;
 
-print(f"Quantidade de estudantes cadastrados: {len(estudantes)}")
-print("Lista de estudantes:")
-for estudante in estudantes:
-    print(estudante)
+// Cria um loop que pede o nome do estudante ao usuário e adiciona na array
+while (continuar) {
+  // Pede o nome do estudante ao usuário
+  var nome = prompt("Digite o nome do estudante ou PARE para encerrar");
+
+  // Verifica se o usuário digitou PARE
+  if (nome == "PARE") {
+    // Muda a variável de controle para false, encerrando o loop
+    continuar = false;
+  } else {
+    // Adiciona o nome do estudante na array
+    estudantes.push(nome);
+  }
+}
+
+// Exibe a quantidade de estudantes cadastrados
+alert("Você cadastrou " + estudantes.length + " estudantes");
+
+// Exibe a lista de estudantes cadastrados
+alert("A lista de estudantes é: " + estudantes.join(", "));
 ```
 
-Emoji: 👩‍🎓👨‍🎓
-
-## Tarefa 2: Planetas 🪐
+## Tarefa 2: Planetas 🪐🌍
 
 Na segunda tarefa, a ideia era criar uma lista de planetas e verificar se o planeta informado pelo usuário estava na lista.
 
@@ -35,17 +47,23 @@ Comecei definindo uma lista de planetas e, em seguida, usei um loop `for` para p
 
 Aqui está como fiz:
 
-```python
-planetas = ["Terra", "Marte", "Plutão", "Vênus", "Júpiter", "Saturno"]
-planeta_usuario = input("Digite o nome de um planeta: ")
+```js
+// Cria uma array de planetas
+var planetas = ["Terra", "Marte", "Plutão", "Vênus", "Júpiter", "Saturno"];
 
-if planeta_usuario in planetas:
-    print("O planeta está na lista!")
-else:
-    print("O planeta não está na lista.")
+// Pede ao usuário para digitar o nome de um planeta
+var planeta = prompt("Digite o nome de um planeta");
+
+// Verifica se o planeta está na array usando o método indexOf
+// Se o método retornar -1, significa que o planeta não foi encontrado na array
+if (planetas.indexOf(planeta) == -1) {
+  // Informa ao usuário que o planeta não está na array
+  alert("O planeta " + planeta + " não está na lista");
+} else {
+  // Informa ao usuário que o planeta está na array
+  alert("O planeta " + planeta + " está na lista");
+}
 ```
-
-Emoji: 🌍🪐
 
 ## Tarefa 3: Lista de Compras 🍎🍌🍊
 
@@ -57,22 +75,51 @@ E, claro, verifiquei se a fruta estava na lista ou não, exibindo mensagens apro
 
 Aqui está o código:
 
-```python
-frutas = ["Maçã", "Banana", "Laranja", "Uva", "Pera"]
-while frutas:
-    print("Lista de frutas: ", frutas)
-    fruta_usuario = input("Digite o nome de uma fruta para remover (ou 'PARE' para encerrar): ")
-    if fruta_usuario == "PARE":
-        break
-    if fruta_usuario in frutas:
-        frutas.remove(fruta_usuario)
-        print(f"{fruta_usuario} foi retirada da lista.")
-    else:
-        print("Fruta indisponível no nosso mercado.")
+```js
+// Cria uma array de frutas
+var frutas = ["banana", "maçã", "laranja", "manga", "uva"];
 
-print("Lista de compras finalizada.")
+// Exibe a array de frutas ao usuário usando o método join para separar os elementos por vírgula
+alert("A lista de frutas é: " + frutas.join(", "));
+
+// Cria uma variável para controlar o loop
+var continuar = true;
+
+// Cria um loop que pede ao usuário para digitar o nome de uma fruta e remove da array se estiver presente
+while (continuar) {
+  // Pede ao usuário para digitar o nome de uma fruta
+  var fruta = prompt("Digite o nome de uma fruta para remover da lista ou PARE para encerrar");
+
+  // Verifica se o usuário digitou PARE
+  if (fruta == "PARE") {
+    // Muda a variável de controle para false, encerrando o loop
+    continuar = false;
+  } else {
+    // Verifica se a fruta está na array usando o método indexOf
+    // Se o método retornar -1, significa que a fruta não foi encontrada na array
+    if (frutas.indexOf(fruta) == -1) {
+      // Informa ao usuário que a fruta não está na array
+      alert("Fruta indisponível no nosso mercado");
+    } else {
+      // Remove a fruta da array usando o método splice
+      // O método splice recebe dois argumentos: o índice do elemento a ser removido e a quantidade de elementos a serem removidos
+      frutas.splice(frutas.indexOf(fruta), 1);
+
+      // Informa ao usuário que a fruta foi retirada da lista
+      alert("Fruta foi retirada da lista");
+    }
+  }
+
+  // Verifica se a array de frutas está vazia
+  if (frutas.length == 0) {
+    // Muda a variável de controle para false, encerrando o loop
+    continuar = false;
+
+    // Informa ao usuário que a lista de compras foi finalizada
+    alert("Lista de compras finalizada");
+  }
+}
+
 ```
-
-Emoji: 🍎🛒
 
 E assim, completei as três tarefas da "Hora de Codar 4". Espero que isso ajude você a entender como abordei cada problema. Divirta-se programando! 😊💻
