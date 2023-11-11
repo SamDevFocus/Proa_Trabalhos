@@ -22,7 +22,7 @@ Este repositório contém o código SQL para a implementação de um banco de da
 
 ## Código SQL
 
-O código SQL para a criação do banco de dados está disponível no arquivo `hospital_database.sql` na [Parte 2](link_para_parte_2_do_repositorio) deste repositório.
+O código SQL para a criação do banco de dados está disponível no arquivo `hospital_database.sql` na [Parte 2](https://github.com/SamDevFocus/Proa_Trabalhos/tree/master/O%20Hospital%20Fundamental%20-%20Parte%202) deste repositório.
 
 ## Povoamento das Tabelas
 
