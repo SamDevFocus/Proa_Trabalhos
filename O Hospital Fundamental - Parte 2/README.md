@@ -2,10 +2,6 @@
 
 Este repositório contém o código SQL para a implementação de um banco de dados relacionado ao sistema hospitalar, como parte de uma atividade do curso. O projeto inicial visava gerenciar informações básicas, mas houve a necessidade de expandir as funcionalidades para incluir o controle de internações de pacientes.
 
-## Expansão das Funcionalidades
-
-Após a primeira versão do projeto, foram identificados requisitos adicionais para a versão atualizada do software. Agora, o sistema contempla o controle de internações, vinculando-as a quartos, profissionais de enfermagem, pacientes e médicos. Abaixo estão os principais elementos adicionados:
-
 - **Tabelas Adicionadas:**
   - `room_type`: Descreve os tipos de quartos disponíveis no hospital.
   - `plan`: Representa os planos de saúde.
@@ -36,18 +32,9 @@ CREATE DATABASE hospital;
 
 ```
 
-## Instruções de Uso
-
-1. Execute o script SQL no seu sistema de gerenciamento de banco de dados para criar o banco de dados e suas tabelas.
-2. Adapte o código conforme necessário para atender aos requisitos específicos do seu ambiente.
-
 ## Contribuições
 
 Contribuições são bem-vindas! Sinta-se à vontade para propor melhorias, corrigir bugs ou adicionar novos recursos.
-
-## Contato
-
-Para mais informações ou dúvidas, entre em contato com [seu_nome@exemplo.com].
 
 🚀 Boa codificação!
 
