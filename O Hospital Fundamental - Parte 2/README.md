@@ -15,10 +15,16 @@ Este repositório contém o código SQL para a implementação de um banco de da
   - `consultation`: Mantém informações sobre as consultas realizadas.
   - `prescription`: Armazena as receitas médicas.
 
-## Diagrama do Banco de Dados 
-![Diagrama Completo](1.jpg) 
-## Relacionamentos Detalhados 
-![Relacionamentos Detalhados](2.jpg)
+<div style="display: flex; justify-content: space-around; align-items: center;">
+  <div style="text-align: center;">
+    <h2>Diagrama do Banco de Dados</h2>
+    <img src="https://github.com/SamDevFocus/Proa_Trabalhos/raw/master/O%20Hospital%20Fundamental%20-%20Parte%202/1.jpg" alt="Diagrama Completo" style="width: 40%;">
+  </div>
+  <div style="text-align: center;">
+    <h2>Relacionamentos Detalhados</h2>
+    <img src="https://github.com/SamDevFocus/Proa_Trabalhos/raw/master/O%20Hospital%20Fundamental%20-%20Parte%202/2.jpg" alt="Relacionamentos Detalhados" style="width: 40%;">
+  </div>
+</div>
 
 ## Código SQL
 
