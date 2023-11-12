@@ -1,41 +1,66 @@
-# Os Segredos do Hospital
+# Atividade: Atualização de Status dos Médicos
 
-Este repositório contém o código SQL para a implementação de um banco de dados relacionado ao sistema hospitalar, como parte de uma atividade do curso. Na Parte 3, realizamos o povoamento das tabelas desenvolvidas nas partes anteriores, incluindo dados detalhados sobre médicos, especialidades, pacientes, consultas, convênios médicos, internações e muito mais.
+**Objetivo:** Realizar alterações no banco de dados do Projeto do Hospital, adicionando uma nova coluna e atualizando o status de atuação dos médicos.
 
-- **Tabelas Adicionadas e Atualizadas:**
-  - `doctor`: Incluímos pelo menos dez médicos de diferentes especialidades.
-  - `specialty`: Acrescentamos ao menos sete especialidades, como pediatria, clínica geral, gastrenterologia e dermatologia.
-  - `patient`: Registramos informações de pelo menos 15 pacientes.
-  - `consultation`: Registrados 20 consultas com diferentes pacientes e médicos, com receituário para pelo menos dez consultas com dois ou mais medicamentos.
-  - `plan`: Incluímos pelo menos quatro convênios médicos, associados a cinco pacientes e cinco consultas.
-  - `doctor_specialty`: Criamos uma entidade de relacionamento entre médico e especialidade.
-  - `hospitalization_nurse`: Criamos uma entidade de relacionamento entre internação e enfermeiro.
-  - `hospitalization`: Arrumamos a chave estrangeira do relacionamento entre convênio e médico, e adicionamos uma entidade entre internação e enfermeiro, com chaves estrangeiras dentro da internação (Chaves Médico e Paciente).
-  - `room_type`: Considerando a operação do sistema, adicionamos ao menos três tipos de quartos (apartamentos, quartos duplos e enfermarias) com valores diferentes.
-  - `room`: Incluímos informações de pelo menos três quartos.
-  - `nurse`: Adicionamos dados de dez profissionais de enfermaria, associando cada internação a pelo menos dois enfermeiros.
-  
-## Diagrama do Banco de Dados 
-![Diagrama Completo](https://github.com/SamDevFocus/Proa_Trabalhos/raw/master/O%20Hospital%20Fundamental%20-%20Parte%202/1.jpg) 
-## Relacionamentos Detalhados 
-![Relacionamentos Detalhados](https://github.com/SamDevFocus/Proa_Trabalhos/raw/master/O%20Hospital%20Fundamental%20-%20Parte%202/2.jpg)
+## Descrição da Atividade:
 
-## Código SQL
+1. **Adição da Coluna:**
+   - Adicione a coluna "em_atividade" à tabela "doctor" para indicar se um médico está atuando no hospital ou não.
 
-O código SQL para a criação do banco de dados está disponível no arquivo `hospital_database.sql` na [Parte 2](link_para_parte_2_do_repositorio) deste repositório.
+```sql
+-- Adiciona a coluna "em_atividade" à tabela "doctor"
+ALTER TABLE doctor
+ADD COLUMN em_atividade BOOLEAN;
+```
 
-## Povoamento das Tabelas
+2. **Atualização de Status:**
+   - Atualize ao menos dois médicos como inativos.
+   - Atualize os demais médicos como ativos.
 
-Os scripts de povoamento para as tabelas estão disponíveis nos arquivos deste repositório. Consulte os seguintes arquivos para ver os dados adicionados:
+```sql
+-- Atualiza dois médicos como inativos
+UPDATE doctor
+SET em_atividade = FALSE
+WHERE doctor_id IN (5, 8);
 
-- `povoamento das tabelas.sql`
+-- Atualiza os demais médicos como ativos
+UPDATE doctor
+SET em_atividade = TRUE
+WHERE doctor_id NOT IN (1, 2, 3, 4, 6, 7, 9, 10);
+```
 
-## Contribuições
+## Observações Importantes:
 
-Contribuições são bem-vindas! Sinta-se à vontade para propor melhorias, corrigir bugs ou adicionar novos recursos.
+- Certifique-se de substituir os IDs dos médicos pelos IDs reais que você deseja tornar inativos.
+- O comando `ALTER TABLE` adiciona a nova coluna, e os comandos `UPDATE` atualizam o status de atuação dos médicos.
+- Recomenda-se realizar backup dos dados antes de executar comandos que modificam a estrutura da tabela, especialmente em ambientes de produção.
 
-🚀 Boa codificação!
+**Solução Proposta:**
+- Adição da coluna "em_atividade" à tabela "doctor".
+- Atualização de dois médicos como inativos e os demais como ativos.
 
----
+```sql
+-- Adiciona a coluna "em_atividade" à tabela "doctor"
+ALTER TABLE doctor
+ADD COLUMN em_atividade BOOLEAN;
 
-*Este projeto faz parte da atividade "O Prisioneiro dos Dados" do curso [Proa].*
+-- Atualiza dois médicos como inativos
+UPDATE doctor
+SET em_atividade = FALSE
+WHERE doctor_id IN (5, 8);
+
+-- Atualiza os demais médicos como ativos
+UPDATE doctor
+SET em_atividade = TRUE
+WHERE doctor_id NOT IN (1, 2, 3, 4, 6, 7, 9, 10);
+```
+<div style="display: flex; justify-content: space-around; align-items: center;">
+  <div style="text-align: center;">
+    <h2>Diagrama do Banco de Dados</h2>
+    <img src="https://github.com/SamDevFocus/Proa_Trabalhos/raw/master/O%20Hospital%20Fundamental%20-%20Parte%202/1.jpg" alt="Diagrama Completo" style="width: 40%;">
+  </div>
+  <div style="text-align: center;">
+    <h2>Relacionamentos Detalhados</h2>
+    <img src="https://github.com/SamDevFocus/Proa_Trabalhos/raw/master/O%20Hospital%20Fundamental%20-%20Parte%202/2.jpg" alt="Relacionamentos Detalhados" style="width: 40%;">
+  </div>
+</div>
